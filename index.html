@@ -1,49 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="https://play.google.com/store/apps/details?id=edu.aiub.www&hl=en_US&gl=US"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <title>Registration</title>
-    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Database</title>
   </head>
+
   <body>
+    <!-- Add Product -->
     <div class="container">
-      <h1>Registration</h1>
-      <div id="error"></div>
-      <form id="form" action="/" method="GET">
-        <div>
-          <label for="firstName">First Name</label>
-          <input id="firstName" name="firstName" type="text" required />
-        </div>
+      <h1>Add Product</h1>
 
-        <div>
-          <label for="lastName">Last Name</label>
-          <input id="lastName" name="lastName" type="text" required />
-        </div>
+      <!-- Name -->
+      <div class="name">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" name="name" />
+      </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="text" required />
-        </div>
+      <!-- Buying -->
+      <div class="buying">
+        <label for="buying">Buying Price</label>
+        <br />
 
-        <div>
-          <label for="password">Password</label>
-          <input id="password" name="password" type="password" />
-        </div>
+        <input type="text" id="buying" name="buying" />
+      </div>
 
-        <div>
-          <label for="confirmPassword">Confirm Password</label>
-          <input id="confirmPassword" name="confirmPassword" type="password" />
-        </div>
+      <!-- Selling -->
+      <div class="selling">
+        <label for="selling">Selling Price</label>
+        <br />
 
-        <button type="submit">Submit</button>
-      </form>
+        <input type="text" id="selling" name="selling" />
+      </div>
+
+      <!-- Display -->
+      <div class="display">
+        <input type="checkbox" id="display" name="display" />
+        <label for="display">Display</label>
+      </div>
+
+      <!-- Save -->
+      <div class="button">
+        <button>Save</button>
+      </div>
+    </div>
+
+    <!-- Display -->
+    <div class="container">
+      <h1>Display</h1>
+
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Profit</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Samsung</td>
+            <td>5000</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Nokia</td>
+            <td>1500</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Xiaomi</td>
+            <td>3300</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>6000</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>8500</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>4560</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Edit Product -->
+    <div class="container">
+      <h1>Edit Product</h1>
+      <!-- Name -->
+      <div class="name">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" name="name" value="HTC" />
+      </div>
+
+      <!-- Buying -->
+      <div class="buying">
+        <label for="buying">Buying Price</label>
+        <br />
+
+        <input type="text" id="buying" name="buying" value="34000" />
+      </div>
+
+      <!-- Selling -->
+      <div class="selling">
+        <label for="selling">Selling Price</label>
+        <br />
+
+        <input type="text" id="selling" name="selling" value="37000" />
+      </div>
+
+      <!-- Display -->
+      <div class="display">
+        <input type="checkbox" id="display" name="display" checked />
+        <label for="display">Display</label>
+      </div>
+
+      <!-- Save -->
+      <div class="button">
+        <button>Save</button>
+      </div>
+    </div>
+
+    <!-- Delete Product -->
+    <div class="container">
+      <h1>Delete Product</h1>
+      <!-- Name -->
+      <div class="name">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" name="name" value="HTC" />
+      </div>
+
+      <!-- Buying -->
+      <div class="buying">
+        <label for="buying">Buying Price</label>
+        <br />
+
+        <input type="text" id="buying" name="buying" value="34000" />
+      </div>
+
+      <!-- Selling -->
+      <div class="selling">
+        <label for="selling">Selling Price</label>
+        <br />
+
+        <input type="text" id="selling" name="selling" value="37000" />
+      </div>
+
+      <!-- Display -->
+      <div class="display">
+        <input type="checkbox" id="display" name="display" checked />
+        <label for="display">Display</label>
+      </div>
+
+      <!-- Save -->
+      <div class="button">
+        <button>Delete</button>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="container">
+      <h1>Search</h1>
+
+      <div class="name">
+        <input type="text " id="search" value="Samsung" />
+        <button class="button-1" id="search" name="search">
+          Search By Name
+        </button>
+      </div>
+
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Profit</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Samsung</td>
+            <td>6000</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>8500</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>Samsung</td>
+            <td>4560</td>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>

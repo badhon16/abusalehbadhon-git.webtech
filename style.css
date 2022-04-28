@@ -1,82 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,900&display=swap");
-
 * {
-  padding: 0%;
   margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #db995a;
-
-  height: 100vh;
+  padding: 5rem 0 5rem 0;
+  background: #ddca7d;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  background-color: #8c705f;
 }
 
-.container #error {
-  color: #dbdbdb;
-  margin-top: 0.5rem;
+table,
+thead,
+tbody,
+tr,
+td {
+  width: 20rem;
   text-align: center;
-  border-top: 0.1rem solid #8c705f;
+  border: 1px solid;
+  border-collapse: collapse;
 }
 
-.container h1 {
+h1 {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #242331;
   text-align: center;
+  border: 1px solid red;
+  border: 1px dotted #242331;
+}
+
+input {
+  padding: 2px;
+}
+
+.name,
+.buying,
+.selling,
+.display {
+  color: #533e2d;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .container {
-  padding: 1.5rem;
-  width: 27.5%;
-
-  border-radius: 1rem;
-  background-color: #654236;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 0.1rem dashed #533e2d;
 }
 
-.container #form div {
-  margin: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.display {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.container #form div input {
-  padding: 0.75rem;
-
-  width: 15rem;
-  height: 2rem;
-
-  font-family: "Poppins", sans-serif;
-
-  border-radius: 1rem;
-  border: none;
-
-  cursor: pointer;
+.button {
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.container #form button {
-  width: 100%;
-  height: 2.5rem;
-  margin-bottom: 0.5rem;
-
-  font-size: 20px;
-  font-weight: 900;
-  color: #957964;
-
-  border-radius: 0.5rem;
-
-  border: none;
+.button button {
+  padding: 0 2rem;
+  color: #533e2d;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-.container #form button:hover {
-  background-color: brown;
-  color: white;
-  cursor: pointer;
+.button-1 {
+  padding: 0.18rem 1rem;
+  color: #533e2d;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
